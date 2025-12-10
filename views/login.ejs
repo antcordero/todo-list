@@ -1,7 +1,14 @@
-<form action="post">
-    <h2></h2>
+<form action="/login" method="post">
+    <h2>Login</h2>
     <div>
-        <label for="name"></label>
-        <input type="text" id="name">
+        <label for="name">Nombre de usuario:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+        <button type="submit">Entrar</button>
     </div>
 </form>
